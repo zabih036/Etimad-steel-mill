@@ -1,0 +1,255 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-03 16:52:38.167668",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "previouse_months_info_section",
+  "year",
+  "column_break_pvvm",
+  "month",
+  "section_break_idqf",
+  "amended_from",
+  "employee",
+  "current_salary",
+  "month_days",
+  "per_day",
+  "salary_currency",
+  "present_days",
+  "leave_days",
+  "absent_days",
+  "column_break_vnje",
+  "attendance_shift",
+  "total_overtime",
+  "total_paid",
+  "current_balance",
+  "payment_details_section",
+  "from_account",
+  "expense_account",
+  "amount",
+  "exchange_rate",
+  "salary_amount",
+  "column_break_takw",
+  "payment_date",
+  "remarks",
+  "from_account_currency"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "previouse_months_info_section",
+   "fieldtype": "Section Break",
+   "label": "Previouse Months Info"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "column_break_pvvm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "label": "Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "section_break_idqf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Salary Payment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_salary",
+   "fieldtype": "Float",
+   "label": "Current Salary",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "month_days",
+   "fieldtype": "Data",
+   "label": "Month Days",
+   "reqd": 1
+  },
+  {
+   "fieldname": "per_day",
+   "fieldtype": "Data",
+   "label": "Per Day",
+   "reqd": 1
+  },
+  {
+   "fieldname": "salary_currency",
+   "fieldtype": "Data",
+   "label": "Salary Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "present_days",
+   "fieldtype": "Data",
+   "label": "Present Days",
+   "reqd": 1
+  },
+  {
+   "fieldname": "leave_days",
+   "fieldtype": "Data",
+   "label": "Leave Days",
+   "reqd": 1
+  },
+  {
+   "fieldname": "absent_days",
+   "fieldtype": "Data",
+   "label": "Absent Days",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vnje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attendance_shift",
+   "fieldtype": "Link",
+   "label": "Attendance Shift",
+   "options": "Shift Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_overtime",
+   "fieldtype": "Float",
+   "label": "Total Overtime",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_paid",
+   "fieldtype": "Float",
+   "label": "Total Paid",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_balance",
+   "fieldtype": "Float",
+   "label": "Current Balance",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "from_account",
+   "fieldtype": "Link",
+   "label": "Cash / Bank Account",
+   "link_filters": "[[\"Account\",\"account_type\",\"in\",[\"Bank\",\"Cash\"]],[\"Account\",\"account_currency\",\"in\",[\"AFN\",\"USD\",\"PKR\"]]]",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expense_account",
+   "fieldtype": "Link",
+   "label": "Expense Account",
+   "link_filters": "[[\"Account\",\"account_type\",\"=\",\"Indirect Expense\"],[\"Account\",\"parent_account\",\"like\",\"%Indirect Expenses%\"]]",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "Amount",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "exchange_rate",
+   "fieldtype": "Float",
+   "label": "Exchange Rate",
+   "non_negative": 1,
+   "precision": "5",
+   "reqd": 1
+  },
+  {
+   "fieldname": "salary_amount",
+   "fieldtype": "Float",
+   "label": "Salary Amount",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_takw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Datetime",
+   "label": "Payment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "reqd": 1
+  },
+  {
+   "default": "USD",
+   "fieldname": "from_account_currency",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "From Account Currency",
+   "options": "Currency",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-10-03 21:31:26.790173",
+ "modified_by": "Administrator",
+ "module": "Etimad",
+ "name": "Salary Payment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

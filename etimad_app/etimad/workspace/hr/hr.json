@@ -1,0 +1,93 @@
+{
+ "app": "erpnext",
+ "charts": [
+  {
+   "chart_name": "Employees by Age",
+   "label": "Employees by Age"
+  },
+  {
+   "chart_name": "Employees by Branch",
+   "label": "Employees by Branch"
+  },
+  {
+   "chart_name": "Employees by Grade",
+   "label": "Employees by Grade"
+  }
+ ],
+ "content": "[{\"id\":\"VEpisyh3r7\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Human Resource</span>\",\"col\":12}},{\"id\":\"JObsemuv7x\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee\",\"col\":3}},{\"id\":\"axc_znav4y\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Overtime\",\"col\":3}},{\"id\":\"9soLthVfUz\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Salary\",\"col\":3}},{\"id\":\"Mvnx9BKPyn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Salary Payment\",\"col\":3}},{\"id\":\"PBMayCtOt9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attendance\",\"col\":3}},{\"id\":\"6qyHoRURJi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Attendance Tool\",\"col\":6}},{\"id\":\"Gr23OPRAz-\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Employees by Age\",\"col\":6}},{\"id\":\"6iwRvHO6TI\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Employees by Branch\",\"col\":6}},{\"id\":\"SAFTMrJ0PD\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Employees by Grade\",\"col\":12}}]",
+ "creation": "2025-10-03 19:32:18.852061",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "users",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "HR",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2025-10-03 19:40:39.631039",
+ "modified_by": "Administrator",
+ "module": "Etimad",
+ "name": "HR",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 11.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Attendance",
+   "link_to": "Attendance",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Employee",
+   "link_to": "Employee",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Employee Overtime",
+   "link_to": "Employee Overtime",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Employee Attendance Tool",
+   "link_to": "Employee Attendance Tool",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Employee Salary",
+   "link_to": "Employee Salary",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Salary Payment",
+   "link_to": "Salary Payment",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "HR",
+ "type": "Workspace"
+}
